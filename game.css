@@ -1,0 +1,57 @@
+/* Container */
+#container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, #a70000, #ffe6e3); /* แดงอ่อนลงขาว */
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Game Layer */
+#layer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 3px solid #60380e;
+    background-color: rgba(255, 255, 255, 0.818);
+    overflow: hidden;
+}
+
+/* Squares */
+.square {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgb(190, 0, 0);
+    border-radius: 5px;
+}
+
+/* Christmas Colors */
+.maroon {
+    background-color: rgb(108, 9, 9);
+}
+.lightgreen {
+    background-color: #005a00;
+}
+.magenta {
+    background-color: #d02743;
+}
+
+.snowflake {
+  position: fixed;
+  top: -10px;
+  z-index: 9999;
+  color: #fff;
+  font-size: 1em;
+  user-select: none;
+  pointer-events: none;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
